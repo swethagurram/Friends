@@ -1,0 +1,107 @@
+.footer__wrapper {
+    background-color: #000;
+    color: $color-grey-light-1;
+    padding: 6rem 30rem;
+    font-family: $font-tertiary;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    font-weight: 400;
+    height: 36rem;
+    z-index: -1000;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    width: 70vw;
+
+    position: fixed;
+    bottom: 0;
+
+    .heading-6 {
+        padding-bottom: 2rem;
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: $color-grey-light-1;
+    }
+
+    a:hover,
+    a:active {
+        color: $color-orange;
+    }
+
+    &__email {
+        border: 2px solid $color-grey-dark-2; 
+        background-color: transparent;
+        margin-right: 6rem;
+        padding: .5rem 2rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__input {
+            font: inherit;
+            background: transparent;
+            border: none;
+            flex-grow: 1;
+            color: $color-grey-light-1;
+        }
+
+        &__input:focus {
+            outline: none;
+        }
+
+        &__btn {
+            font-size: 3rem;
+            border: none;
+            background: transparent;
+            color: $color-grey-dark-2;
+            font-family: $font-primary;
+            font-weight: 700;
+        }
+
+        &__btn:hover,
+        &__btn:focus {
+            color: $color-grey-light-1;
+            outline:none;
+        }
+
+        &__btn:-webkit-autofill {
+            background-color: rgb(250, 255, 189) !important;
+            color: rgb(0, 0, 0) !important;
+        }
+    }
+
+
+    &__copyright {
+        grid-column: 1 / -1;
+        padding-top: 6rem;
+        display: flex;
+        justify-content: space-between;
+
+        &__social {
+            display: flex;
+            list-style: none;
+
+            li {
+                a:link,
+                a:visited {
+                    padding-left: 2rem;
+                    text-transform: uppercase;
+                    color: $color-grey-dark-1;
+                }
+
+                a:hover,
+                a:active {
+                    color: $color-grey-light-1;
+                }
+            }
+        }
+    }
+    
+}

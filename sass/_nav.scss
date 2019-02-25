@@ -1,0 +1,54 @@
+.nav {
+    background-color: #fff;
+    padding: 1.8rem 30rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+
+    &__logo {
+        &:link,
+        &:visited {
+            fill: #000;
+        }
+
+        &:hover,
+        &:active {
+            fill: $color-orange-light;
+        }
+
+        &__icon {
+            width: 6.5rem;
+            height: 3.25rem;
+            display: inline-block;
+        }
+    }
+
+    &__menu {
+        display: inline-block;
+
+        &__item {
+            list-style: none;
+            padding-left: 4rem;
+            display: inline-block;
+            float: left;
+
+            a:link,
+            a:visited {
+                text-decoration: none;
+                font-size: 2rem;
+                font-family: $font-primary;
+                font-weight: 500;
+                letter-spacing: -.5px;
+                color: rgba($color-primary, .6);
+            }
+
+            a:hover,
+            a:active {
+                color: $color-grey-light-1;
+            }
+        }
+    }
+}

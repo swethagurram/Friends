@@ -1,0 +1,51 @@
+$font-primary: 'EB Garamond', serif;
+$font-secondary: 'Roboto Mono', monospace;
+$font-tertiary: 'Open Sans', sans-serif;
+
+$color-primary: #141424;
+
+$color-orange-light: #fd8b09;
+$color-orange: #db544b;
+$color-yellow: #fdd95f;
+$color-blue: #0a00aa;
+$color-cream: #d7cdc2;
+
+$color-grey-light-1:#d8d7d6;
+$color-grey-light-2: #bcbdc1;
+$color-grey-dark-1: #76757d;
+$color-grey-dark-2: #333351;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //10px/16px(browser default) = 62.5% => 1 rem = 10px
+}
+
+
+body {
+    font-family: $font-primary;
+    color: $color-primary;
+    font-weight: 400;
+    position: relative;
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: min-content repeat(4, 65vh) min-content;
+    grid-template-columns: 70% 30%;
+    grid-row-gap: 15rem;
+    padding: 0 30rem;
+    background-color: #fff;
+    position: relative;
+    z-index: 500;
+}
